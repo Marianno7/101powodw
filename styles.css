@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Kaushan+Script&display=swap');
+
+* {
+    padding: 0;
+}
+
+body {
+    /*background-color: brown;*/
+    background-image: url("https://img.freepik.com/free-vector/cute-small-love-heart-pattern-backdrop-wrapping-paper-print_1017-49855.jpg?w=1380&t=st=1709588857~exp=1709589457~hmac=08bc578b0b69069f16897094a90a72b17b3ba9400f6f661dd1f48281c44d9059");
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        ". title ."
+        ". box ."
+        ". . .";
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    grid-area: box;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+
+    border: 2px solid black;
+    border-radius: 15px;
+
+    padding: 20px;
+}
+
+.title {
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: larger;
+
+    grid-area: title;
+    text-align: center;
+    position: relative;
+    top: 25%;
+}
+
+#field {
+    font-size: x-large;
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+#btn {
+    font-size: medium;
+    font-weight: bold;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    width: 60%;
+
+}
+
+.prefix {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#btn:active {
+    transform: scale(1.1);
+}

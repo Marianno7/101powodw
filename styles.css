@@ -8,7 +8,11 @@
 
 body {
     /*background-color: brown;*/
+    /*
     background-image: url("https://img.freepik.com/free-vector/cute-small-love-heart-pattern-backdrop-wrapping-paper-print_1017-49855.jpg?w=1380&t=st=1709588857~exp=1709589457~hmac=08bc578b0b69069f16897094a90a72b17b3ba9400f6f661dd1f48281c44d9059");
+    */
+    background-image: url("https://img.freepik.com/premium-vector/hearts-seamless-pattern-lovely-romantic-background-great-valentines-day_569013-121.jpg?w=740");
+    background-size: auto;
 }
 
 .container {
@@ -81,4 +85,13 @@ body {
 
 :root {
     color-scheme: only light;
+}
+
+@media only screen and (min-width : 1224px) {
+    .box {
+        position: relative;
+        top: 10%;
+        left: 23%;
+        width: 50%;
+    }
 }

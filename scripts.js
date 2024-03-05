@@ -3,6 +3,7 @@ const reasons = ["bo jesteś dla mnie najważniejsza", "bo jesteś ze mną zawsz
 const length = reasons.length;
 let field = document.getElementById("field");
 const btn = document.getElementById("btn");
+let count = 0;
 
 field.innerHTML = "&#x1F90D;";
 const random = () => {
@@ -14,6 +15,13 @@ const random = () => {
 const write = () => {
     //write reason on screen
     field.innerHTML = reasons[random()] + ".";
+    count = count + 1;
+
+    if (count == 50) {
+        alert("WOW to już 50-te kliknięcie!")
+    } else if (count == 101) {
+        alert("101 kliknięć!! Dalej potrzebujesz powodów?")
+    }
 }
 
 btn.addEventListener("click", write)

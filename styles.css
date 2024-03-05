@@ -3,6 +3,7 @@
 
 * {
     padding: 0;
+
 }
 
 body {
@@ -76,4 +77,8 @@ body {
 
 #btn:active {
     transform: scale(1.1);
+}
+
+:root {
+    color-scheme: only light;
 }

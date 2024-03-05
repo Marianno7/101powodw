@@ -13,13 +13,13 @@ body {
 .container {
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
-        ". title ."
-        ". box ."
-        ". . .";
+        ". title title title ."
+        ". box box box ."
+        ". . . . .";
 }
 
 .box {
@@ -46,7 +46,7 @@ body {
     grid-area: title;
     text-align: center;
     position: relative;
-    top: 25%;
+    top: 10%;
 }
 
 #field {
@@ -64,6 +64,7 @@ body {
     background-color: transparent;
     border-radius: 10px;
     width: 60%;
+    text-align: center;
 
 }
 

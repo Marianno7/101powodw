@@ -16,7 +16,7 @@ const write = () => {
     //write reason on screen
     field.innerHTML = reasons[random()] + ".";
     count = count + 1;
-
+    console.log(count)
     if (count == 50) {
         alert("WOW to już 50-te kliknięcie!")
     } else if (count == 101) {
